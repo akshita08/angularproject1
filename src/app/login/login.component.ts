@@ -1,3 +1,4 @@
+// login.component.ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,7 +11,12 @@ export class LoginComponent {
   password: string = '';
 
   login() {
-   console.log('UserID' , this.userId);
-   console.log('Password' , this.password);
+    console.log('UserID' , this.userId);
+    console.log('Password' , this.password);
+   }
   }
-}
+
+
+
+   
+
