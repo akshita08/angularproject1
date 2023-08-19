@@ -1,0 +1,20 @@
+/* @import '~@angular/material/theming'; */
+
+.login-card {
+  max-width: 400px;
+  margin: auto;
+  padding: 16px;
+
+  .mat-card-header {
+    text-align: center;
+  }
+
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

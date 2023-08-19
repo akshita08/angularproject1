@@ -1,5 +1,4 @@
-// dashboard.component.ts
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
@@ -7,15 +6,19 @@ import { DataService } from '../data.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
-  values: string[] = [];
+export class DashboardComponent {
 
-  constructor(private dataService: DataService) { }
-
-  ngOnInit() {
-    this.values = this.dataService.values;
-  }
-}
-
-
+  constructor(private dataservice : DataService)
+  {}
   
+  dashboardData : any= [];
+
+  ngOnInit(): void {
+    
+  this.dashboardData = this.dataservice.getDashboard();
+  }
+
+
+
+
+}
