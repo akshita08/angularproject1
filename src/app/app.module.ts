@@ -12,8 +12,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 
@@ -23,11 +24,12 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule ,
     MatCardModule,
     MatFormFieldModule,

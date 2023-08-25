@@ -17,6 +17,7 @@ export class LoginComponent {
   constructor(private dataservice : DataService , private route : Router){}
 
   hide = true;
+  // show =true;
   emailid : any;
   userpassword : any ;
   email = new FormControl('', [Validators.required, Validators.email]);
@@ -45,7 +46,9 @@ export class LoginComponent {
     if(this.user.password === this.userpassword)
     {
       console.log("login Successfuly");
-      this.route.navigate(['dashboard']);
+      this.route.navigate(['todolist']);
+     
+      // this.route.navigate(['dashboard']);
     }
     else
     {
